@@ -1,0 +1,124 @@
+html {
+ margin: 0;
+ height: 100vh;
+ width: 53vh;
+ background: #222;
+}
+
+header {
+ color:white;
+ transition: 0.5s ease-in-out;
+}
+
+header img {
+ border: solid 2px white;
+ border-radius: 50%;
+}
+
+#content-profile {
+ background: transparent;
+ margin:0;
+ justify-content: center;
+ display: flex;
+ margin-top: 15px;
+}
+
+#profile-border {
+ background:
+ linear-gradient(45deg,black,grey,white);
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ padding: 3px;
+ animation: 1.5s rotate linear infinite;
+}
+
+#content-profile img {
+ animation: 1.5s nrotate linear infinite;
+}
+
+#name {
+ margin: 0;
+ display: flex;
+ justify-content: center;
+ background:
+ linear-gradient(120deg,black,white,black);
+ background-clip: text;
+ animation: 3s shin3 linear infinite;
+}
+
+/*Animation*/
+
+@keyframes rotate {
+ from {
+  rotate: 0;
+ }
+ to {
+  rotate: 360deg;
+ }
+}
+@keyframes nrotate {
+ from {
+  rotate: 360deg;
+ }
+ to {
+  rotate: 0;
+ }
+}
+@keyframes shin3 {
+ from {
+  background-position-x: 0;
+ }
+ to {
+  background-position-x: 695px;
+ }
+}
+@keyframes bg-transY {
+ from {
+  background-position-y: -335px;
+ }
+ to {
+  background-position-y: 335px;
+ }
+}
+/*Animation*/
+
+#name h1 {
+ margin: 5px;
+ color: transparent;
+}
+
+#name h1 strong {
+ background: linear-gradient(45deg,red,maroon,red);
+ background-clip: text;
+}
+
+#LastOurPict{
+ display:flex;
+ justify-content: center;
+ align-content: center;
+ align-items: center;
+ touch-action: none;
+}
+
+#LastOurPict img{
+ width: 70%;
+ height: 70%;
+ cursor: none;
+ touch-action: none;
+ border-radius: 10px 10px 10px 10px;
+ box-shadow: white 1px 2px 2px;
+ transition: 0.5s ease-in-out;
+ opacity: 0.3;
+}
+
+#LastOurPict img:hover {
+ scale: 1.234;
+ opacity: 1;
+ translate: 0 55px;
+ box-shadow: white 4px 5px 10px;
+}
+
+.fade {
+ opacity: 0.3;
+}
